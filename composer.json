@@ -1,0 +1,36 @@
+{
+  "name": "liteapi/monolog-extension",
+  "description": "Monolog extension for LiteApi framework",
+  "type": "extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "pjpawel",
+      "email": "pawel.jan.podgorski@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LiteApi\\MonologExtension\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LiteApi\\MonologExtension\\Test\\": "test/"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "monolog/monolog": "3.*"
+  },
+  "require-dev": {
+    "liteapi/liteapi": "0.6.0-alpha",
+    "phpunit/phpunit": "10.2.*"
+  },
+  "scripts": {
+    "unit": "vendor/bin/phpunit .",
+    "all": [
+      "@unit"
+    ]
+  }
+}

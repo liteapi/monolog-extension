@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.2/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         executionOrder="depends,defects"
+         failOnRisky="true"
+         failOnWarning="true"
+         beStrictAboutOutputDuringTests="true"
+         cacheDirectory=".phpunit.cache"
+         requireCoverageMetadata="false"
+         beStrictAboutCoverageMetadata="true">
+  <coverage/>
+  <testsuites>
+    <testsuite name="default">
+      <directory>test</directory>
+    </testsuite>
+  </testsuites>
+  <source/>
+</phpunit>
+<!--
+cacheDirectory=".phpunit.cache"
+                 forceCoversAnnotation="false"
+         beStrictAboutCoversAnnotation="true"
+         beStrictAboutOutputDuringTests="true"
+         beStrictAboutTodoAnnotatedTests="true"
+         convertDeprecationsToExceptions="true"
+        <?xml version="1.0" encoding="UTF-8"?>
+
+        <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd" bootstrap="vendor/autoload.php" executionOrder="depends,defects" beStrictAboutOutputDuringTests="true" failOnRisky="true" failOnWarning="true" cacheDirectory=".phpunit.cache" requireCoverageMetadata="true" beStrictAboutCoverageMetadata="true">
+          <testsuites>
+            <testsuite name="default">
+              <directory>test</directory>
+            </testsuite>
+          </testsuites>
+        &lt;!&ndash;  <logging>
+            <junit outputFile="performance_tests/logs/junit.xml"/>
+        &lt;!&ndash;    <text outputFile="performance_tests/logs/test.txt"/>&ndash;&gt;
+          </logging>&ndash;&gt;
+        </phpunit>-->
